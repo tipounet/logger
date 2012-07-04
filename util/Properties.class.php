@@ -92,7 +92,7 @@ class Properties implements \Iterator{
 	 * @return boolean
 	 */
 	public function valid(){
-		$k = key($this->p);
+		$key = key($this->p);
 		return ($key !== NULL && $key !== FALSE);
 	}
 	/**

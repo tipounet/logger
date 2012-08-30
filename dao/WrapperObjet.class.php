@@ -1,6 +1,6 @@
 <?php
 
-namespace \phpjungle\dao;
+namespace phpjungle\dao;
 /**
  * Cette classe étend PDO pour utiliser un fetch classe de compet
  * @author moogli

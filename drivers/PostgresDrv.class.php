@@ -127,7 +127,7 @@ insert;
 			$ret = $this->pdo->exec($requete);
 			if ($ret === false){
 				$err = $this->pdo->errorInfo();
-				throw new \Exception('Erreur SQL : ' . $e [2], $this->pdo->errorCode ());
+				throw new \Exception('Erreur SQL : ' . $err[2], $this->pdo->errorCode ());
 			}
 			else{
 				$data = $ret->fetch(\PDO::FETCH_OBJ);
@@ -176,6 +176,7 @@ insert;
 		try {
 			$r = $this->pdo->query ( $sql );
 			if ($r === false) {
+				$e = $this->pdo->errorInfo ();
 				throw new \Exception ( 'Erreur SQL : ' . $e->getMessage () . "\r\n" . $sql );
 			} else {
 				return true;

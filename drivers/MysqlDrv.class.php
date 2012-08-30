@@ -157,6 +157,7 @@ insert;
 		try {
 			$r = $this->pdo->query ( $sql );
 			if ($r === false) {
+				$e = $this->pdo->errorInfo();
 				throw new \Exception ( 'Erreur SQL : ' . $e->getMessage () . "\r\n" . $sql );
 			} else {
 				return true;

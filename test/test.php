@@ -51,5 +51,3 @@ class logger extends atoum\test {
         ->boolean($log->delLog())->isEqualTo(true);
     }
 }
-
-?>

@@ -61,5 +61,3 @@ class OracleDrv extends atoum\test {
 
     }
 }
-
-?>

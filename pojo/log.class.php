@@ -66,5 +66,3 @@ class log {
 	}
 	// </editor-fold>
 }
-
-?>

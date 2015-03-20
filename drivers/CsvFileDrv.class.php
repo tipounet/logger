@@ -165,5 +165,3 @@ class CsvFileDrv implements DriversInt {
 		return $str;
 	}
 }
-
-?>
